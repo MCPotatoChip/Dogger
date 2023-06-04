@@ -53,6 +53,9 @@ nav {
 .text{
     text-align: left;
 }
+.title h3{
+    font-size: 25px;
+}
 p{
     color: grey;
 }
@@ -242,7 +245,46 @@ main img{
     color: white !important;
 }
 
-
+/*  */
+.questions .row .text .line{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.questions .row .text .line i{
+    border: 1px solid #a2c0be;
+    height: 30px;
+    color: #ccc;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+}
+.questions .row .text .line p{
+    color: black;
+    margin: 0;
+    font-size: 25px;
+}
+.questions .row .text .line .muted{
+    font-size: 18px;
+    color: #bbb;
+    margin: 10px;
+}
+.gallery .row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery .row img{
+    width: 25%;
+    transition: transform 0.5s;
+    
+}
+.gallery .row img:hover{
+    cursor: zoom-in;
+    transform: scale(1.2);
+}
 
 .ss .service{
     margin-bottom: 40px;
@@ -471,6 +513,9 @@ footer .bottom p{
     footer .item:last-of-type{
         width: 35%;
     }
+    .questions .row .text .line i{
+        width: 30px;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
     nav .row .menu {
@@ -536,6 +581,9 @@ footer .bottom p{
     footer .item{
         width: 100%;
     }
+    .questions .row .text .line i{
+        width: 30px;
+    }
 }
 @media screen and (max-width:767px) {
     nav .row .menu {
@@ -598,5 +646,8 @@ footer .bottom p{
     }
     footer .item{
         width: 100%;
+    }
+    .questions .row .text .line i{
+        width: 50px;
     }
 }
